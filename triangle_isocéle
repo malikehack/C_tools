@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main() /**Ecrire un programme qui affiche un triangle rectangle isocèle formé d’étoiles de N lignes.**/
+int main() /**Ecrire un programme qui affiche un triangle rectangle isocÃ¨le formÃ© dâ€™Ã©toiles de N lignes.**/
 {
    unsigned int N, i, j ;
     printf("Tracage d'un triangle isocele\n");
