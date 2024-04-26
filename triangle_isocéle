@@ -1,18 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main() /**Ecrire un programme qui affiche un triangle rectangle isocèle formé d’étoiles de N lignes.**/
+int main() /**Ecrire un programme qui affiche un triangle isocèle formé d'étoiles de N lignes (N est fourni au clavier).
+              Exemple : Pour N=8, on aura :**/
 {
-   unsigned int N, i, j ;
-    printf("Tracage d'un triangle isocele\n");
+    unsigned int N, i, j, l;
     printf("Donnez le nombre de ligne\n");
-    scanf("%u",&N);
+    scanf("%d",&N);
 
-    for(i=1;i<=N;i++){
-            for(j=1;j<=i+1-1;j++)
-                printf("* ");
-                printf("\n");
+    for(i=0;i<=N;i++){
+            for(j=N-1-i;j>0;j--);
+                printf(" ");
+            for(l=0;l<=i*2;l++)
+                printf("*");
 
+            printf("\n");
     }
-          return 0;
+
+    return 0;
 }
